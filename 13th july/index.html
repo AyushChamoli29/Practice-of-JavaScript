@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="heading">E-COMMERCE STORE</div><br>
+    <div id="ribbon" style="padding: 10px;">
+            <div id="filterbox">
+                <label for="filter">FILTER:</label>
+                <select id="filter">
+                    <option value="All categories">ALL CATEGORIES</option>
+                </select>
+            </div>
+            <div id="searchbox">
+                <input type="text" id="search" placeholder="SEARCH:">
+            </div>
+            <div id="sorting">
+                <label for="sort">SORT:</label>
+                <select id="sort">
+                    <option value="PRICE HIGH TO LOW">PRICE HIGH TO LOW</option>
+                    <option value="PRICE LOW TO HIGH">PRICE LOW TO HIGH</option>
+                    <option value="RATING LOW TO HIGH">RATING LOW TO HIGH</option>
+                    <option value="RATING HIGH TO LOW">RATING HIGH TO LOW</option>
+                </select>
+            </div>
+            <div id="cart"></div>
+        </div><br>
+    <div id="main">
+        <div id="content">
+            <div id="modal">
+                <div id="modalContent">
+
+                </div>
+                <button type="button" id="close">X</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
