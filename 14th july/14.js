@@ -1,3 +1,4 @@
+// Here starts the code
 async function fetching_data(){
     const data1= await fetch('https://fakestoreapi.com/products');
     const data2=await data1.json();
