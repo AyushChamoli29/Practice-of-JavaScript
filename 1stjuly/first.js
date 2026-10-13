@@ -269,7 +269,7 @@
 
 // 1
 
-// const ques = [1, [2, 3], [4, [5, 6]]]; 
+// const ques = [1, [2, 3], [4, [5, 6]]];
 // function flat(arr) {
 //   let ans = [];
 //   for (const element of arr) {
@@ -311,17 +311,18 @@
 // 10
 
 const users = [
-  { country: 'USA', name: 'A' },
-  { country: 'UK', name: 'B' },
-  { country: 'USA', name: 'A duplicate' }
+  { country: "USA", name: "A" },
+  { country: "UK", name: "B" },
+  { country: "USA", name: "A duplicate" },
 ];
 
-const ans=users.reduce((acc,item)=>{
-  if(!acc[item.country]){
-    acc[item.country]=[];
+const ans = users.reduce((acc, item) => {
+  if (!acc[item.country]) {
+    acc[item.country] = [];
   }
   acc[item.country].push(item);
   return acc;
-},{})
+}, {});
 
 console.log(ans);
+console.log("Hello");
